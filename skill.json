@@ -1,0 +1,35 @@
+{
+  "name": "genpark-self-driving-software-agent-autonomous-task-runner-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Self-driving software agent for autonomous task execution & error self-healing.",
+  "author": "genpark",
+  "category": "agentic",
+  "tags": [
+    "self-driving-software",
+    "autonomous-agent",
+    "error-self-healing",
+    "task-runner",
+    "ph-august13"
+  ],
+  "inputs": {
+    "task_goal": {
+      "type": "string"
+    },
+    "max_retries": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "execution_result": {
+      "type": "string"
+    },
+    "self_healed_errors": {
+      "type": "integer"
+    },
+    "completion_time_sec": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
